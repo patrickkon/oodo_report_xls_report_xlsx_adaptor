@@ -6,7 +6,7 @@
 report_xls to report_xlsx Adaptor
 ================
 
-Create .xls generated from odoo's report_xls library, to a .xlsx file, with minimal code changes.
+Convert a .xls file (generated from odoo's report_xls library), to a .xlsx file, with minimal code changes.
 
 ==============
 General Steps for Usage (in a given report_xls child class)
