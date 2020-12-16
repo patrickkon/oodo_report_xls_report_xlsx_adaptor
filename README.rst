@@ -6,34 +6,32 @@
 report_xls to report_xlsx Adaptor
 ================
 
-This module provides a basic report class to generate xlsx report.
+Create .xls generated from odoo's report_xls library, to a .xlsx file, with minimal code changes.
 
+==============
 General Steps for Usage (in a given report_xls child class)
+==============
+Remove these 2 lines: ::
 
-Remove these 2 lines:
-================
-.. code-block:: python
     import xlwt
 
     from openerp.addons.report_xls.report_xls import report_xls
-    
 
-Add these 2 lines:
-================
-.. code-block:: python
+Add these 2 lines: ::
+
     python from openerp.addons.report_xls_to_report_xlsx_adaptor.report.report_xlsx import ReportXlsx as report_xls
 
     xlwt = wb
 
-
+==============
 Installation and usage of report_xls and report_xlsx
-============
+==============
 
 Refer to the individual packages: 
 
 https://apps.odoo.com/apps/modules/10.0/report_xls/ 
 
-https://apps.odoo.com/apps/modules/12.0/report_xlsx/
+https://github.com/OCA/reporting-engine/tree/12.0/report_xlsx
 
 
 .. image:: https://odoo-community.org/website/image/ir.attachment/5784_f2813bd/datas
