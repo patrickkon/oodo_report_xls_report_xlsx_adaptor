@@ -8,29 +8,31 @@ report_xls to report_xlsx Adaptor
 
 This module provides a basic report class to generate xlsx report.
 
-General Steps for Usage (in a given report_xls child class):
+General Steps for Usage (in a given report_xls child class)
 
-1. Remove these 2 lines:
-
-```
+Remove these 2 lines:
+================
+.. code-block:: python
     import xlwt
 
     from openerp.addons.report_xls.report_xls import report_xls
-```
+    
 
-2. Add these 2 lines:
+Add these 2 lines:
+================
+.. code-block:: python
+    python from openerp.addons.report_xls_to_report_xlsx_adaptor.report.report_xlsx import ReportXlsx as report_xls
 
-```
-python from openerp.addons.report_xls_to_report_xlsx_adaptor.report.report_xlsx import ReportXlsx as report_xls
+    xlwt = wb
 
-xlwt = wb
-```
 
 Installation and usage of report_xls and report_xlsx
 ============
 
-Refer to the individual packages: <br/>
-https://apps.odoo.com/apps/modules/10.0/report_xls/ <br/>
+Refer to the individual packages: 
+
+https://apps.odoo.com/apps/modules/10.0/report_xls/ 
+
 https://apps.odoo.com/apps/modules/12.0/report_xlsx/
 
 
